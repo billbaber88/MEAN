@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <button (click)="spin('loan')">Bankrupt? Take out a second mortgage here!</button>
+    <ul>
+        <li>
+          Low Returns Slots:<br>
+          <p>Win up to 10 gold!</p>
+          <button (click)="spin('easy')">$5 to spin</button>
+        </li>
+        <li>
+          Medium Returns Slots:<br>
+          <p>Win up to 50 gold!</p>
+          <button (click)="spin('medium')">$10 to spin</button>
+        </li>
+        <li>
+          High Returns Slots:<br>
+          <p>Win up to 150 gold!</p>
+          <button (click)="spin('hard')">$50 to spin</button>
+        </li>
+        <li>
+          High Stakes Slots:<br>
+          <p>earns up to 500 gold</p>
+          <button (click)="spin('nightmare')">$100 to spin</button>
+        </li>
+      </ul>
+      
+      <h2>Your Gambiling history: </h2>
+      <h4 *ngFor="let logs of _dataService.logData">
+        {{ logs }}
+      </h4>
+      
+</body>
+</html>
+

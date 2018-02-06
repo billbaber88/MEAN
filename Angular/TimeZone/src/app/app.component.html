@@ -1,0 +1,7 @@
+<h1>{{ time | date: 'medium'}}</h1>
+<section>
+  <button (click)="getDateByZone('PST')" >PST</button>
+  <button (click)="getDateByZone('MST')">MST</button>
+  <button (click)="getDateByZone('CST')">CST</button>
+  <button (click)="getDateByZone('EST')">EST</button>
+</section>

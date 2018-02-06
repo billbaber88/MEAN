@@ -1,0 +1,59 @@
+.wrapper{
+    overflow: scroll;
+}
+
+.gridlines{
+    
+}
+
+.box {
+    display: inline-block;
+    width: 4%;
+    height: 50px;
+    margin-top: -4px;
+}
+
+.key {
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+.opt {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: solid black 2px;
+    vertical-align: middle;
+}
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+.orange {
+    background-color: orange;
+}
+.purple {
+    background-color: purple;
+}
+.brown {
+    background-color: brown;
+}
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
+.grey {
+    background-color: grey;
+}

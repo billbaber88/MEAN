@@ -1,0 +1,16 @@
+<section>
+    <h1>Your weight on Earth: </h1>
+    <input type="number" max="300" min="0" [(ngModel)]="weight">
+</section>
+
+
+<section>
+  <app-mercury [weight]="weight"></app-mercury>
+  <app-venus [weight]="weight"></app-venus>
+  <app-mars [weight]="weight"></app-mars>
+  <app-jupiter [weight]="weight"></app-jupiter>
+  <app-saturn [weight]="weight"></app-saturn>
+  <app-uranus [weight]="weight"></app-uranus>
+  <app-neptune [weight]="weight"></app-neptune>
+  <app-pluto [weight]="weight"></app-pluto>
+</section>

@@ -1,0 +1,23 @@
+<div class="wrapper">
+
+    <div class="box" *ngFor="let boxColor of boxArray" [ngStyle]="{'background-color': boxColor}"></div>
+    
+    <div class="key">
+        <h1>8 Bit Painting</h1>
+        <div (click)="addBox('red')" class="opt red"></div>
+        <div (click)="addBox('blue')" class="opt blue"></div>
+        <div (click)="addBox('green')" class="opt green"></div>
+        <div (click)="addBox('yellow')" class="opt yellow"></div>
+        <div (click)="addBox('orange')" class="opt orange"></div>
+        <div (click)="addBox('purple')" class="opt purple"></div>
+        <div (click)="addBox('brown')" class="opt brown"></div>
+        <div (click)="addBox('black')" class="opt black"></div>
+        <div (click)="addBox('white')" class="opt white"></div>
+        <div (click)="addBox('grey')" class="opt grey"></div>
+        <h2>Click a square to add one in that color</h2>
+        <button (click)="reset()">Reset</button>
+    </div>
+        
+
+</div>
+
